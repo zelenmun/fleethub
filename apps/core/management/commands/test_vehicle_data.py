@@ -1,12 +1,12 @@
 from django.core.management.base import BaseCommand
 from django.conf import settings
-from apps.core.models import Company
+from apps.core.models import Vehicle
 import json
 import os
 
 
 class Command(BaseCommand):
-    help = 'Carga datos de prueba para las compañías'
+    help = 'Carga datos de prueba para los vehículos'
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -17,21 +17,21 @@ class Command(BaseCommand):
         parser.add_argument(
             '--file',
             type=str,
-            default='company_test_data_json.json',
-            help='Nombre del archivo JSON con los datos (por defecto: company_test_data_json.json)',
+            default='vehicle_test_data_json.json',
+            help='Nombre del archivo JSON con los datos (por defecto: vehicle_test_data_json.json)',
         )
 
     def handle(self, *args, **options):
         if options['delete']:
-            Company.objects.all().delete()
+            Vehicle.objects.all().delete()
             self.stdout.write('Datos existentes eliminados.')
 
-        # Cargar datos desde archivo JSON
+        # Cargar datos desde archivo JSON en apps/core/management/commands/test/
         file_path = os.path.join(settings.BASE_DIR, 'apps', 'core', 'management', 'test', options['file'])
 
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
-                companies_data = json.load(file)
+                vehicles_data = json.load(file)
         except FileNotFoundError:
             self.stdout.write(
                 self.style.ERROR(f'❌ Archivo no encontrado: {file_path}')
@@ -48,38 +48,38 @@ class Command(BaseCommand):
             )
             return
 
-        if not isinstance(companies_data, list):
+        if not isinstance(vehicles_data, list):
             self.stdout.write(
-                self.style.ERROR('❌ El archivo JSON debe contener una lista de compañías')
+                self.style.ERROR('❌ El archivo JSON debe contener una lista de vehículos')
             )
             return
 
         created_count = 0
         updated_count = 0
 
-        for data in companies_data:
+        for data in vehicles_data:
             try:
-                company, created = Company.objects.get_or_create(
-                    subdomain=data['subdomain'],
+                vehicle, created = Vehicle.objects.get_or_create(
+                    identifier_number=data['identifier_number'],
                     defaults=data
                 )
                 if created:
                     created_count += 1
-                    self.stdout.write(f'✅ Creada: {company.name}')
+                    self.stdout.write(f'✅ Creado: {vehicle.license_plate} - {vehicle.brand} {vehicle.model}')
                 else:
                     updated_count += 1
-                    self.stdout.write(f'⚠️  Ya existe: {company.name}')
+                    self.stdout.write(f'⚠️  Ya existe: {vehicle.license_plate} - {vehicle.brand} {vehicle.model}')
             except KeyError as e:
                 self.stdout.write(
                     self.style.WARNING(f'⚠️  Campo faltante {e} en registro: {data}')
                 )
             except Exception as e:
                 self.stdout.write(
-                    self.style.ERROR(f'❌ Error creando compañía {data.get("name", "desconocida")}: {e}')
+                    self.style.ERROR(f'❌ Error creando vehículo {data.get("license_plate", "desconocido")}: {e}')
                 )
 
         self.stdout.write(
             self.style.SUCCESS(
-                f'Proceso completado. {created_count} compañías creadas, {updated_count} ya existían.'
+                f'Proceso completado. {created_count} vehículos creados, {updated_count} ya existían.'
             )
         )

@@ -1,13 +1,11 @@
 
-# Comando para instalar dependencias
-pip install -r requirements/base.txt
-
-
-# # # # En terminal de Python # # # #
+# # # # EN LA TERMINAL DE PYTHON # # # #
 from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
 # # # # ----------------------------------- # # # #
 
+# Comando para instalar dependencias
+pip install -r requirements/base.txt
 
 # Comando para crear migraciones en Django
 python manage.py makemigrations
@@ -23,8 +21,3 @@ pip install django-cities_light
 
 # Comando para cargar ciudades y países en Django
 python manage.py cities_light --force-all --progress --settings=FleetHub.settings.base
-
-# Comando para registrar los datos test de Company
-python manage.py test_company_data
-# # # # Para reemplazar los datos de Company
-python manage.py test_company_data --delete

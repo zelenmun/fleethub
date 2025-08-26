@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tricimoto Express",
+    "subdomain": "tricimoto-express",
+    "legal_name": "Tricimoto Express S.A.",
+    "tax_id": "1234567890001",
+    "phone": "0987654321",
+    "email": "info@tricimoto.com",
+    "daily_fee": "1.50"
+  },
+  {
+    "name": "Rápidos del Norte",
+    "subdomain": "rapidos-norte",
+    "legal_name": "Transportes Rápidos del Norte Cía. Ltda.",
+    "tax_id": "1234567890002",
+    "phone": "0998877665",
+    "email": "contacto@rapidosnorte.com",
+    "daily_fee": "1.25"
+  },
+  {
+    "name": "Tricycles Unidos",
+    "subdomain": "tricycles-unidos",
+    "legal_name": "Asociación de Tricycles Unidos",
+    "tax_id": "1234567890003",
+    "phone": "0987123456",
+    "email": "admin@tricyclesunidos.ec",
+    "daily_fee": "1.75"
+  },
+  {
+    "name": "Transporte La Libertad",
+    "subdomain": "trans-libertad",
+    "legal_name": "Cooperativa de Transporte La Libertad",
+    "tax_id": "1234567890004",
+    "phone": "0995544332",
+    "email": "info@translibertad.com",
+    "daily_fee": "1.00"
+  },
+  {
+    "name": "Mototaxis del Sur",
+    "subdomain": "mototaxis-sur",
+    "legal_name": "Compañía de Mototaxis del Sur S.A.",
+    "tax_id": "1234567890005",
+    "phone": "0991122334",
+    "email": "gerencia@mototaxissur.ec",
+    "daily_fee": "2.00"
+  },
+  {
+    "name": "Veloz Express",
+    "subdomain": "veloz-express",
+    "legal_name": "Veloz Express Transporte Ejecutivo Cia. Ltda.",
+    "tax_id": "1234567890006",
+    "phone": "0987654321",
+    "email": "contacto@velozexpress.com",
+    "daily_fee": "1.80"
+  },
+  {
+    "name": "Cooperativa San Martín",
+    "subdomain": "coop-san-martin",
+    "legal_name": "Cooperativa de Transporte San Martín de Porres",
+    "tax_id": "1234567890007",
+    "phone": "0983456789",
+    "email": "secretaria@coopsanmartin.ec",
+    "daily_fee": "1.35"
+  }
+]

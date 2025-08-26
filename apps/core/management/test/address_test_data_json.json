@@ -1,0 +1,112 @@
+[
+  {
+    "country": "Ecuador",
+    "province": "Guayas",
+    "city": "Guayaquil",
+    "sector": "Las Peñas",
+    "postal_code": "090313",
+    "reference": "Frente al Malecón 2000, edificio azul de 3 pisos",
+    "content_type": 1,
+    "object_id": "a2a87200-5a97-439a-9c41-5d65e9a2e539"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Pichincha",
+    "city": "Quito",
+    "sector": "La Mariscal",
+    "postal_code": "170143",
+    "reference": "Av. Amazonas y Foch, esquina, local comercial",
+    "content_type": 1,
+    "object_id": "3e22d033-fe38-4f99-980a-c966b8b75c53"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Azuay",
+    "city": "Cuenca",
+    "sector": "El Centro",
+    "postal_code": "010150",
+    "reference": "Calle Larga y Hermano Miguel, casa colonial blanca",
+    "content_type": 1,
+    "object_id": "85504a02-6734-44d9-a318-d51a8f4c83d2"
+  },
+  {
+    "country": "Ecuador",
+    "province": "El Oro",
+    "city": "Machala",
+    "sector": "Centro",
+    "postal_code": "070101",
+    "reference": "Parque Central, a dos cuadras del Municipio",
+    "content_type": 1,
+    "object_id": "45f7aaa5-7b89-42fd-bd8c-571c6b31eb04"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Tungurahua",
+    "city": "Ambato",
+    "sector": "La Merced",
+    "postal_code": "180101",
+    "reference": "Av. Cevallos y Castillo, edificio de vidrio verde",
+    "content_type": 1,
+    "object_id": "944cc3d3-351d-4f56-9f59-d6aed1440cff"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Manabí",
+    "city": "Manta",
+    "sector": "Tarqui",
+    "postal_code": "130802",
+    "reference": "Malecón escénico, cerca del puerto pesquero",
+    "content_type": 1,
+    "object_id": "f7cdef49-3a97-404d-91ba-e4b68e05f64b"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Loja",
+    "city": "Loja",
+    "sector": "San Sebastián",
+    "postal_code": "110101",
+    "reference": "Plaza San Sebastián, casa de dos plantas color amarillo",
+    "content_type": 1,
+    "object_id": "d6dc68bc-f87e-40c1-92ae-05d44a68fb64"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Loja",
+    "city": "Loja",
+    "sector": "San Sebastián",
+    "postal_code": "110101",
+    "reference": "Plaza San Sebastián, casa de dos plantas color amarillo",
+    "content_type": 1,
+    "object_id": "45f7aaa5-7b89-42fd-bd8c-571c6b31eb04"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Esmeraldas",
+    "city": "Esmeraldas",
+    "sector": "Las Palmas",
+    "postal_code": "080101",
+    "reference": "Av. Libertad, cerca de la playa, casa con portón negro",
+    "content_type": 1,
+    "object_id": "a2a87200-5a97-439a-9c41-5d65e9a2e539"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Chimborazo",
+    "city": "Riobamba",
+    "sector": "La Concepción",
+    "postal_code": "060101",
+    "reference": "Parque Sucre, diagonal al teatro León, edificio colonial",
+    "content_type": 1,
+    "object_id": "f7cdef49-3a97-404d-91ba-e4b68e05f64b"
+  },
+  {
+    "country": "Ecuador",
+    "province": "Imbabura",
+    "city": "Ibarra",
+    "sector": "El Sagrario",
+    "postal_code": "100150",
+    "reference": "Plaza de Armas, frente a la Catedral, local en planta baja",
+    "content_type": 1,
+    "object_id": "3e22d033-fe38-4f99-980a-c966b8b75c53"
+  }
+]

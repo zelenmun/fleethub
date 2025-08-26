@@ -1,0 +1,71 @@
+FORMA DE USO DE LOS COMANDOS PARA CARGAR DATOS DE PRUEBA EN LA APLICACIÓN CORE
+1. Abre la terminal o línea de comandos.
+2. Navega al directorio raíz de tu proyecto Django donde se encuentra el archivo manage.py
+3. Asegúrate de que tu entorno virtual esté activado (si estás utilizando uno).
+
+4. ASEGÚRATE DE SEGUIR EL ORDEN NUMERADO DE COMANDOS
+
+# ----------------------------------------------------------------------
+Los comandos NO NUMERADOS son para uso OPCIONAL (no son necesarios para la carga básica)
+
+
+# ----------------------------------------------------------------------
+# ------------------------- CORE | COMPANY -----------------------------
+# ----------------------------------------------------------------------
+
+1. # Comando para registrar los datos test de Company
+python manage.py test_company_data
+
+# ----------------------------------------------------------------------
+
+# Para reemplazar los datos de Company
+python manage.py test_company_data --delete
+
+# # # # Para reemplazar los datos de Company
+python manage.py test_company_data --file company_test_data_json
+
+# # # # Para reemplazar los datos de Company
+python manage.py test_company_data --delete --file company_test_data_json
+
+# ----------------------------------------------------------------------
+# CORE | ACTUALIZACIÓN DE LOS UUID A PARTIR DE LOS REGISTROS DE COMAPAÑÍA
+# ----------------------------------------------------------------------
+
+2. # Comando para actualizar los UUID de las compañías
+python manage.py update_json_company_ids
+
+# ----------------------------------------------------------------------
+# ------------------------- CORE | VEHICLE -----------------------------
+# ----------------------------------------------------------------------
+
+3. # Cargar desde vehicle_test_data_json.json (por defecto)
+python manage.py test_vehicle_data
+
+# ----------------------------------------------------------------------
+
+# Eliminar datos existentes y cargar
+python manage.py test_vehicle_data --delete
+
+# # # # Cargar desde archivo específico
+python manage.py test_vehicle_data --file vehicle_test_data_json.json
+
+# # # # Combinar opciones
+python manage.py test_vehicle_data --delete --file vehicle_test_data_json.json
+
+# ----------------------------------------------------------------------
+# ------------------------- CORE | ADDRESS -----------------------------
+# ----------------------------------------------------------------------
+
+4. # Cargar desde vehicle_test_data_json.json (por defecto)
+python manage.py test_address_data
+
+# ----------------------------------------------------------------------
+
+# Eliminar datos existentes y cargar
+python manage.py test_address_data --delete
+
+# # # # Cargar desde archivo específico
+python manage.py test_address_data --file vehicle_test_data_json.json
+
+# # # # Combinar opciones
+python manage.py test_address_data --delete --file vehicle_test_data_json.json
