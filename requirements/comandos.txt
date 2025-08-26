@@ -1,0 +1,23 @@
+
+# Comando para instalar dependencias
+pip install -r requirements/base.txt
+
+# Comando para crear migraciones en Django
+python manage.py makemigrations
+
+# Comando para aplicar migraciones en Django
+python manage.py migrate
+
+#Comando para crear un superusuario en Django
+python manage.py createsuperuser --settings=FleetHub.settings.base
+
+# Comando para instalar Cities Light en Django
+pip install django-cities_light
+
+# Comando para cargar ciudades y países en Django
+python manage.py cities_light --force-all --progress --settings=FleetHub.settings.base
+
+# Comando para registrar los datos test de Company
+python manage.py test_company_data
+# # # # Para reemplazar los datos de Company
+python manage.py test_company_data --delete
